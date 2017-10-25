@@ -17,7 +17,13 @@ export default async function* <T>(
 
       yield next.value;
     }
-  } finally {
+  }
+  catch(err){
+    clearTimeout(clock);
+    ita.return();    
+    throw err;
+  }  
+  finally {
     clearTimeout(clock);
   }
 }
