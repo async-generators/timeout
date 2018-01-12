@@ -1,7 +1,7 @@
 {
   "name": "@async-generators/timeout",
   "description": "terminate if the source yields too slow",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "Meirion Hughes",
     "email": "crakinshot@yahoo.com",
