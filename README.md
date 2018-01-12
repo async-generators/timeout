@@ -7,10 +7,6 @@ terminate if the source yields too slow
 [![Travis Status][travis-image]][travis-url]
 [![Travis Status][codecov-image]][codecov-url]
 
-## Usage
-
-_package requires a system that supports async-iteration, either natively or via down-compiling_
-
 ### Install
 ```
 yarn add @async-generators/timeout

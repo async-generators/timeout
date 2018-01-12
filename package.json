@@ -28,7 +28,7 @@
     "url": "https://github.com/async-generators/timeout/issues"
   },
   "devDependencies": {
-    "@async-generators/equal": "^0.2.1",
+    "@async-generators/equal": "^0.6.1",
     "@types/chai": "^4.0.4",
     "@types/mocha": "^2.2.43",
     "@types/node": "^8.0.28",
@@ -41,7 +41,7 @@
     "typescript": "^2.5.2"
   },
   "scripts": {
-    "test": "nyc node_modules/mocha/bin/mocha --harmony-async-iteration --require source-map-support/register --compilers ts:ts-node/register test/*.ts",
+    "test": "nyc node_modules/mocha/bin/mocha --require source-map-support/register --compilers ts:ts-node/register test/*.ts",
     "build": "npm run build:commonjs && npm run build:es2015",
     "build:commonjs": "tsc --project tsconfig.build.json --rootDir src/ --outDir ./dist/commonjs",
     "build:es2015": "tsc --project tsconfig.build.json --rootDir src/ --outDir ./dist/es2015 --module es2015",
